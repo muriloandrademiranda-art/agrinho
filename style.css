@@ -1,0 +1,247 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fcfdfa;
+    color: #2c3e2b;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e3d2f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #8ebd6e;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8ebd6e;
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(rgba(30, 61, 47, 0.7), rgba(30, 61, 47, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal {
+    background-color: #8ebd6e;
+    color: #1e3d2f;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #a3d985;
+}
+
+/* Estrutura das Seções */
+.section-container {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg-alternativo {
+    background-color: #f1f6ee;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    color: #1e3d2f;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #617a60;
+    margin-bottom: 40px;
+}
+
+/* Grid de Cards */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #8ebd6e;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1e3d2f;
+}
+
+/* Lista de Investimentos */
+.lista-investimentos {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.item-invest {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1e3d2f;
+    border-radius: 0 8px 8px 0;
+}
+
+.item-invest h4 {
+    font-size: 20px;
+    color: #1e3d2f;
+    margin-bottom: 5px;
+}
+
+/* Formulário do Simulador */
+.Form-simulador {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.Form-simulador button {
+    width: 100%;
+    background-color: #1e3d2f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Form-simulador button:hover {
+    background-color: #2d5c46;
+}
+
+/* Caixa de Resultado */
+.resultado-box {
+    background-color: #e2f0d9;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #b8dc9c;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3d2f;
+    color: #a3bda8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    .banner h1 {
+        font-size: 28px;
+    }
+}
